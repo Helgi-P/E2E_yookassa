@@ -40,36 +40,39 @@ class OrderPage(BasePage):
 
     # 2.1. Ввод невалидного значения в поле "Населенный пункт" и проверка ошибки
     def fill_locality_invalid(self):
-        self.hover_element(OrderPageLocators.LOCALITY)
-        self.click_element(OrderPageLocators.LOCALITY)
+        try:
+            # Вводим невалидное значение и проверяем, что ошибка отображается
+            self.input_text_with_autocomplete(OrderPageLocators.LOCALITY, "Сетубал")
 
-        self.input_text_with_autocomplete(OrderPageLocators.LOCALITY, "Сетубал")
+            self.click_element(OrderPageLocators.CLIENT_EMAIL)
 
-        self.click_element(OrderPageLocators.CLIENT_EMAIL)
+            self.wait_for_element_to_be_visible(OrderPageLocators.LOCALITY_NOT_FOUND)
+            error_visible = self.is_element_visible(OrderPageLocators.LOCALITY_NOT_FOUND)
 
-        self.wait_for_element_to_be_visible(OrderPageLocators.LOCALITY_NOT_FOUND)
-
-        error_visible = self.is_element_visible(OrderPageLocators.LOCALITY_NOT_FOUND)
-        assert error_visible, "Ошибка 'Не удалось определить населенный пункт' не отображена."
-
-        if error_visible:
+            assert error_visible, "Ошибка 'Не удалось определить населенный пункт' не отображена."
             print("Ошибка 'Не удалось определить населенный пункт' успешно отображена.")
-        else:
-            print("Ошибка не отображена, проверьте вводимые данные.")  # def fill_locality_invalid(self):
+
+        except Exception as e:
+            print(f"Ошибка при проверке поля 'Населенный пункт': {e}")
+            self.take_screenshot("fill_locality_invalid_error")
+            raise
 
     # 2.2. Ввод валидного значения в поле "Населенный пункт" и проверка отсутствия ошибки
     def fill_locality_valid(self):
-        self.hover_element(OrderPageLocators.LOCALITY)
-        self.click_element(OrderPageLocators.LOCALITY)
+        try:
+            # Вводим валидное значение и проверяем, что ошибки нет
+            self.input_text_with_autocomplete(OrderPageLocators.LOCALITY, "Полярные Зори")
 
-        self.input_text_with_autocomplete(OrderPageLocators.LOCALITY, "Полярные Зори")
+            self.click_element(OrderPageLocators.CLIENT_EMAIL)
 
-        self.click_element(OrderPageLocators.CLIENT_EMAIL)
+            assert self.is_element_not_visible(OrderPageLocators.LOCALITY_NOT_FOUND), \
+                "Ошибка 'Не удалось определить населенный пункт' отображена, хотя не должна."
+            print("Сообщение об ошибке 'Не удалось определить населенный пункт' не отображается.")
 
-        assert self.is_element_not_visible(OrderPageLocators.LOCALITY_NOT_FOUND), \
-            "Ошибка 'Не удалось определить населенный пункт' отображена, хотя не должна."
-
-        print("Сообщение об ошибке 'Не удалось определить населенный пункт' не отображается.")
+        except Exception as e:
+            print(f"Ошибка при проверке поля 'Населенный пункт': {e}")
+            self.take_screenshot("fill_locality_valid_error")
+            raise
 
     # 3. Нажатие на радиобаттон "Курьером" и проверка появления поля "Адрес" и устранения радиобаттона "ЮKassa"
     def select_delivery_by_courier(self):
