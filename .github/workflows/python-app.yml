@@ -29,9 +29,9 @@ jobs:
         pip install flake8 pytest
         pip install allure-pytest
         pip install selenium
-        pip instal allure-python-commons
-        pip instal pytest-order
-        pip instal webdriver-manager
+        pip install allure-python-commons
+        pip install pytest-order
+        pip install webdriver-manager
         pip install requests 
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
