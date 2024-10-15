@@ -57,7 +57,6 @@ def test_product_order_flow1(driver):
     with allure.step('Подтверждение заказа, с проверкой редиректа'):
         order_page = OrderPage(driver)
         order_page.submit_order()
-        time.sleep(5)
         order_page.check_redirect_to_payment()
 
 @allure.story('Добавление всех товаров в корзину с изменением способов оплаты и доставки')
