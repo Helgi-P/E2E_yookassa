@@ -1,0 +1,184 @@
+Негативные проверки на сложном негативном пути
+Открытие страницы: https://demo.yookassa.ru/
+Открытие корзины через иконку
+Клик на элемент: ('xpath', '//a[@href="/cart_items"]')
+Поиск элемента: ('xpath', '//a[@href="/cart_items"]')
+Элемент найден: ('xpath', '//a[@href="/cart_items"]')
+Клик выполнен на элемент: ('xpath', '//a[@href="/cart_items"]')
+Товар не найден в корзине.
+Товар ромб не в корзине. Добавляем первый раз.
+Проверка видимости элемента: ('xpath', '//*[@id="splide01-slide04"]/div/form/div/div[4]/div/div[2]/div/button')
+Элемент виден: ('xpath', '//*[@id="splide01-slide04"]/div/form/div/div[4]/div/div[2]/div/button')
+Поиск элемента: ('xpath', '//*[@id="splide01-slide04"]/div/form/div/div[4]/div/div[2]/div/button')
+Элемент найден: ('xpath', '//*[@id="splide01-slide04"]/div/form/div/div[4]/div/div[2]/div/button')
+Поиск элемента: ('xpath', '//div[@data-product-id="253355137"]//button[@data-quantity-change="1"]')
+Элемент найден: ('xpath', '//div[@data-product-id="253355137"]//button[@data-quantity-change="1"]')
+Поиск элемента: ('xpath', '//div[@data-product-id="253355137"]//button[@data-quantity-change="1"]')
+Элемент найден: ('xpath', '//div[@data-product-id="253355137"]//button[@data-quantity-change="1"]')
+Удаляем товар ромб из корзины.
+Проверка видимости элемента: ('xpath', '//div[@data-product-id="253355137"]//button[@class="button js-item-delete icon icon-trash"]')
+Элемент виден: ('xpath', '//div[@data-product-id="253355137"]//button[@class="button js-item-delete icon icon-trash"]')
+Поиск элемента: ('xpath', '//div[@data-product-id="253355137"]//button[@class="button js-item-delete icon icon-trash"]')
+Элемент найден: ('xpath', '//div[@data-product-id="253355137"]//button[@class="button js-item-delete icon icon-trash"]')
+Проверка видимости элемента: ('xpath', '/html/body/div[2]/main/div[1]/div/a')
+Элемент виден: ('xpath', '/html/body/div[2]/main/div[1]/div/a')
+Поиск элемента: ('xpath', '/html/body/div[2]/main/div[1]/div/a')
+Элемент найден: ('xpath', '/html/body/div[2]/main/div[1]/div/a')
+Добавление эллипса в корзину
+Проверка видимости элемента: ('xpath', '//form[@data-product-id="253355471"]')
+Элемент виден: ('xpath', '//form[@data-product-id="253355471"]')
+Наведение на элемент: ('xpath', '//form[@data-product-id="253355471"]')
+Поиск элемента: ('xpath', '//form[@data-product-id="253355471"]')
+Элемент найден: ('xpath', '//form[@data-product-id="253355471"]')
+Наведение выполнено на элемент: ('xpath', '//form[@data-product-id="253355471"]')
+Проверка видимости элемента: ('xpath', '//form[@data-product-id="253355471"]//button[contains(@class, "product-preview__buy-btn")]')
+Элемент виден: ('xpath', '//form[@data-product-id="253355471"]//button[contains(@class, "product-preview__buy-btn")]')
+Клик на элемент: ('xpath', '//form[@data-product-id="253355471"]//button[contains(@class, "product-preview__buy-btn")]')
+Поиск элемента: ('xpath', '//form[@data-product-id="253355471"]//button[contains(@class, "product-preview__buy-btn")]')
+Элемент найден: ('xpath', '//form[@data-product-id="253355471"]//button[contains(@class, "product-preview__buy-btn")]')
+Клик выполнен на элемент: ('xpath', '//form[@data-product-id="253355471"]//button[contains(@class, "product-preview__buy-btn")]')
+Открытие корзины через иконку
+Клик на элемент: ('xpath', '//a[@href="/cart_items"]')
+Поиск элемента: ('xpath', '//a[@href="/cart_items"]')
+Элемент найден: ('xpath', '//a[@href="/cart_items"]')
+Клик выполнен на элемент: ('xpath', '//a[@href="/cart_items"]')
+Поиск элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[1]/div[3]/input')
+Элемент найден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[1]/div[3]/input')
+Поиск элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[1]/div[3]/button')
+Элемент найден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[1]/div[3]/button')
+Поиск элемента: ('xpath', '//div[contains(@class, "insales-ui-discount-error")]')
+Элемент найден: ('xpath', '//div[contains(@class, "insales-ui-discount-error")]')
+Скриншот сохранён: /home/runner/work/E2E_yookassa/E2E_yookassa/screenshots/20241015-120435.png
+Ошибка при применении промокода: Указан несуществующий купон, убедитесь, что он введен верно
+Проверка видимости элементов хедера
+Проверка видимости элемента: ('xpath', '//button[contains(@class, "header__search-btn") and contains(@class, "js-show-search")]')
+Элемент виден: ('xpath', '//button[contains(@class, "header__search-btn") and contains(@class, "js-show-search")]')
+Проверка видимости элемента: ('xpath', '//a[@href="/cart_items"]')
+Элемент виден: ('xpath', '//a[@href="/cart_items"]')
+Прокрутка до элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Поиск элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Элемент найден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Прокрутка выполнена до элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Проверка видимости элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Элемент виден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Клик на элемент: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Поиск элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Элемент найден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Клик выполнен на элемент: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Проверка видимости элемента: ('xpath', "//div[@class='co-basket_item-description' and text()='Ромб']/..")
+Элемент виден: ('xpath', "//div[@class='co-basket_item-description' and text()='Ромб']/..")
+Проверка видимости элемента: ('xpath', "//div[@class='co-basket_item-description' and text()='Эллипс']/..")
+Элемент виден: ('xpath', "//div[@class='co-basket_item-description' and text()='Эллипс']/..")
+Все товары из корзины успешно отображены на странице заказа.
+Проверка видимости элементов хедера
+Проверка видимости элемента: ('xpath', '//button[contains(@class, "header__search-btn") and contains(@class, "js-show-search")]')
+Элемент виден: ('xpath', '//button[contains(@class, "header__search-btn") and contains(@class, "js-show-search")]')
+Проверка видимости элемента: ('xpath', '//a[@href="/cart_items"]')
+Элемент виден: ('xpath', '//a[@href="/cart_items"]')
+Валидное заполнение телефона
+Ожидание видимости элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент видим: ('xpath', '//*[@id="client_phone"]')
+Наведение на элемент: ('xpath', '//*[@id="client_phone"]')
+Поиск элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент найден: ('xpath', '//*[@id="client_phone"]')
+Наведение выполнено на элемент: ('xpath', '//*[@id="client_phone"]')
+Клик на элемент: ('xpath', '//*[@id="client_phone"]')
+Поиск элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент найден: ('xpath', '//*[@id="client_phone"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="client_phone"]')
+Ввод текста '+79549991122' в элемент: ('xpath', '//*[@id="client_phone"]')
+Поиск элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент найден: ('xpath', '//*[@id="client_phone"]')
+Поле '('xpath', '//*[@id="client_phone"]')' очищено.
+Текст '+79549991122' введён в элемент: ('xpath', '//*[@id="client_phone"]')
+Поле 'Контактный телефон' успешно заполнено значением '+79549991122'.
+Клик на элемент: ('xpath', '//*[@id="create_order"]')
+Поиск элемента: ('xpath', '//*[@id="create_order"]')
+Элемент найден: ('xpath', '//*[@id="create_order"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="create_order"]')
+Кнопка 'Подтвердить заказ' успешно нажата.
+Не удалось выполнить редирект. Текущий URL: https://demo.yookassa.ru/new_order
+Проверка видимости элемента: ('xpath', '//*[@id="delivery_address"]//div[contains(@class, "co-notice--danger")]')
+Элемент виден: ('xpath', '//*[@id="delivery_address"]//div[contains(@class, "co-notice--danger")]')
+Поиск элемента: ('xpath', '//*[@id="delivery_address"]//div[contains(@class, "co-notice--danger")]')
+Элемент найден: ('xpath', '//*[@id="delivery_address"]//div[contains(@class, "co-notice--danger")]')
+Текст элемента '('xpath', '//*[@id="delivery_address"]//div[contains(@class, "co-notice--danger")]')': Поле не заполнено
+Ошибка в поле 'Населённый пункт': Поле не заполнено
+Скриншот сохранён: /home/runner/work/E2E_yookassa/E2E_yookassa/screenshots/20241015-120743.png
+Переход на следующую проверку заполнения полей.
+Заполнение невалидного населенного пункта
+Наведение на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Поиск элемента: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Элемент найден: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Наведение выполнено на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Клик на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Поиск элемента: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Элемент найден: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Ввод текста 'Сетубал' в элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Поиск элемента: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Элемент найден: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Поле '('xpath', '//*[@id="shipping_address_full_locality_name"]')' очищено.
+Текст 'Сетубал' введён и подтверждён через автозаполнение.
+Клик на элемент: ('xpath', '//*[@id="client_email"]')
+Поиск элемента: ('xpath', '//*[@id="client_email"]')
+Элемент найден: ('xpath', '//*[@id="client_email"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="client_email"]')
+Ожидание видимости элемента: ('xpath', '//*[@id="delivery-location-not-valid"]')
+Элемент видим: ('xpath', '//*[@id="delivery-location-not-valid"]')
+Проверка видимости элемента: ('xpath', '//*[@id="delivery-location-not-valid"]')
+Элемент виден: ('xpath', '//*[@id="delivery-location-not-valid"]')
+Ошибка 'Не удалось определить населенный пункт' успешно отображена.
+Клик на элемент: ('xpath', '//*[@id="create_order"]')
+Поиск элемента: ('xpath', '//*[@id="create_order"]')
+Элемент найден: ('xpath', '//*[@id="create_order"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="create_order"]')
+Кнопка 'Подтвердить заказ' успешно нажата.
+Не удалось выполнить редирект. Текущий URL: https://demo.yookassa.ru/new_order
+Проверка видимости элемента: ('xpath', '//*[@id="delivery_address"]//div[contains(@class, "co-notice--danger")]')
+Элемент не виден в течение 10 секунд: ('xpath', '//*[@id="delivery_address"]//div[contains(@class, "co-notice--danger")]')
+Скриншот сохранён: /home/runner/work/E2E_yookassa/E2E_yookassa/screenshots/20241015-120836.png
+Проверка видимости элемента: ('xpath', '//*[@id="tabs-person"]//div[contains(@class, "co-notice--danger")]')
+Элемент виден: ('xpath', '//*[@id="tabs-person"]//div[contains(@class, "co-notice--danger")]')
+Поиск элемента: ('xpath', '//*[@id="tabs-person"]//div[contains(@class, "co-notice--danger")]')
+Элемент найден: ('xpath', '//*[@id="tabs-person"]//div[contains(@class, "co-notice--danger")]')
+Текст элемента '('xpath', '//*[@id="tabs-person"]//div[contains(@class, "co-notice--danger")]')': Поле не заполнено
+Ошибка в поле 'Контактное лицо (ФИО)': Поле не заполнено
+Скриншот сохранён: /home/runner/work/E2E_yookassa/E2E_yookassa/screenshots/20241015-120836.png
+Переход на следующую проверку заполнения полей.
+Заполнение валидного населенного пункта
+Наведение на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Поиск элемента: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Элемент найден: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Наведение выполнено на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Клик на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Поиск элемента: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Элемент найден: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Не удалось кликнуть на элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]'). Ошибка: Message: element click intercepted: Element <input class="co-input-field js-input-field tt-input" autocomplete="off" type="text" id="shipping_address_full_locality_name" name="shipping_address[full_locality_name]" value="" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" placeholder=""> is not clickable at point (412, 42). Other element would receive the click: <div class="header__area-logo">...</div>
+  (Session info: chrome=129.0.6668.89)
+Stacktrace:
+#0 0x558d63dfab9a <unknown>
+#1 0x558d63ae0670 <unknown>
+#2 0x558d63b368c6 <unknown>
+#3 0x558d63b347e6 <unknown>
+#4 0x558d63b32297 <unknown>
+#5 0x558d63b316a6 <unknown>
+#6 0x558d63b24ae8 <unknown>
+#7 0x558d63b54b82 <unknown>
+#8 0x558d63b244c8 <unknown>
+#9 0x558d63b54d4e <unknown>
+#10 0x558d63b73dd6 <unknown>
+#11 0x558d63b54923 <unknown>
+#12 0x558d63b226e7 <unknown>
+#13 0x558d63b236de <unknown>
+#14 0x558d63dc466b <unknown>
+#15 0x558d63dc8611 <unknown>
+#16 0x558d63db04e5 <unknown>
+#17 0x558d63dc9192 <unknown>
+#18 0x558d63d956ef <unknown>
+#19 0x558d63de99d8 <unknown>
+#20 0x558d63de9ba7 <unknown>
+#21 0x558d63df99ec <unknown>
+#22 0x7fd4efc94ac3 <unknown>
+
+Скриншот сохранён: /home/runner/work/E2E_yookassa/E2E_yookassa/screenshots/20241015-120838.png
