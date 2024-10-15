@@ -1,0 +1,107 @@
+Простое добавление товаров в корзину с оформлением заказа только обязательными валидными данными
+Открытие страницы: https://demo.yookassa.ru/
+Добавление квадрата в корзину
+Проверка видимости элемента: ('xpath', '//form[@data-product-id="253354771"]')
+Элемент виден: ('xpath', '//form[@data-product-id="253354771"]')
+Наведение на элемент: ('xpath', '//form[@data-product-id="253354771"]')
+Поиск элемента: ('xpath', '//form[@data-product-id="253354771"]')
+Элемент найден: ('xpath', '//form[@data-product-id="253354771"]')
+Наведение выполнено на элемент: ('xpath', '//form[@data-product-id="253354771"]')
+Проверка видимости элемента: ('xpath', '//form[@data-product-id="253354771"]//button[contains(@class, "product-preview__buy-btn")]')
+Элемент виден: ('xpath', '//form[@data-product-id="253354771"]//button[contains(@class, "product-preview__buy-btn")]')
+Клик на элемент: ('xpath', '//form[@data-product-id="253354771"]//button[contains(@class, "product-preview__buy-btn")]')
+Поиск элемента: ('xpath', '//form[@data-product-id="253354771"]//button[contains(@class, "product-preview__buy-btn")]')
+Элемент найден: ('xpath', '//form[@data-product-id="253354771"]//button[contains(@class, "product-preview__buy-btn")]')
+Клик выполнен на элемент: ('xpath', '//form[@data-product-id="253354771"]//button[contains(@class, "product-preview__buy-btn")]')
+Переход на страницу квадрата
+Проверка видимости элемента: ('xpath', '//form[@data-product-id="253354771"]//a')
+Элемент виден: ('xpath', '//form[@data-product-id="253354771"]//a')
+Открытие страницы: https://demo.yookassa.ru/product/kvadrat
+Проверка видимости элемента: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/button')
+Элемент не виден в течение 10 секунд: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/button')
+Скриншот сохранён: /home/runner/work/E2E_yookassa/E2E_yookassa/screenshots/20241015-143134.png
+Товар уже в корзине. Увеличиваем количество на 2.
+Клик на элемент: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Поиск элемента: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Элемент найден: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Клик выполнен на элемент: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Клик на элемент: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Поиск элемента: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Элемент найден: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Клик выполнен на элемент: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/button[2]')
+Клик на элемент: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/a')
+Поиск элемента: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/a')
+Элемент найден: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/a')
+Клик выполнен на элемент: ('xpath', '//*[@id="product-detail-buy-area"]/div[1]/div/div/a')
+Товар не найден в корзине.
+Товар круг не в корзине. Добавляем первый раз.
+Проверка видимости элемента: ('xpath', '//*[@id="splide01-slide02"]/div/form/div/div[4]/div/div[2]/div/button')
+Элемент виден: ('xpath', '//*[@id="splide01-slide02"]/div/form/div/div[4]/div/div[2]/div/button')
+Поиск элемента: ('xpath', '//*[@id="splide01-slide02"]/div/form/div/div[4]/div/div[2]/div/button')
+Элемент найден: ('xpath', '//*[@id="splide01-slide02"]/div/form/div/div[4]/div/div[2]/div/button')
+Поиск элемента: ('xpath', '//div[@data-product-id="253354830"]//button[@data-quantity-change="1"]')
+Элемент найден: ('xpath', '//div[@data-product-id="253354830"]//button[@data-quantity-change="1"]')
+Прокрутка до элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Поиск элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Элемент найден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Прокрутка выполнена до элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Проверка видимости элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Элемент виден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Клик на элемент: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Поиск элемента: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Элемент найден: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Клик выполнен на элемент: ('xpath', '/html/body/div[2]/main/div[2]/div/form/div[2]/div/div[2]/button')
+Проверка видимости элемента: ('xpath', "//div[@class='co-basket_item-description' and text()='Квадрат']/..")
+Элемент виден: ('xpath', "//div[@class='co-basket_item-description' and text()='Квадрат']/..")
+Проверка видимости элемента: ('xpath', "//div[@class='co-basket_item-description' and text()='Круг']/..")
+Элемент виден: ('xpath', "//div[@class='co-basket_item-description' and text()='Круг']/..")
+Все товары из корзины успешно отображены на странице заказа.
+Ожидание видимости элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент видим: ('xpath', '//*[@id="client_phone"]')
+Наведение на элемент: ('xpath', '//*[@id="client_phone"]')
+Поиск элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент найден: ('xpath', '//*[@id="client_phone"]')
+Наведение выполнено на элемент: ('xpath', '//*[@id="client_phone"]')
+Клик на элемент: ('xpath', '//*[@id="client_phone"]')
+Поиск элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент найден: ('xpath', '//*[@id="client_phone"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="client_phone"]')
+Ввод текста '+79549991122' в элемент: ('xpath', '//*[@id="client_phone"]')
+Поиск элемента: ('xpath', '//*[@id="client_phone"]')
+Элемент найден: ('xpath', '//*[@id="client_phone"]')
+Поле '('xpath', '//*[@id="client_phone"]')' очищено.
+Текст '+79549991122' введён в элемент: ('xpath', '//*[@id="client_phone"]')
+Поле 'Контактный телефон' успешно заполнено значением '+79549991122'.
+Ввод текста 'Полярные Зори' в элемент: ('xpath', '//*[@id="shipping_address_full_locality_name"]')
+Поле '('xpath', '//*[@id="shipping_address_full_locality_name"]')' очищено.
+Текст 'Полярные Зори' введён и подтверждён через автозаполнение.
+Клик на элемент: ('xpath', '//*[@id="client_email"]')
+Поиск элемента: ('xpath', '//*[@id="client_email"]')
+Элемент найден: ('xpath', '//*[@id="client_email"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="client_email"]')
+Проверка отсутствия видимости элемента: ('xpath', '//*[@id="delivery-location-not-valid"]')
+Элемент невиден: ('xpath', '//*[@id="delivery-location-not-valid"]')
+Сообщение об ошибке 'Не удалось определить населенный пункт' не отображается.
+Ожидание видимости элемента: ('xpath', '//*[@id="client_name"]')
+Элемент видим: ('xpath', '//*[@id="client_name"]')
+Наведение на элемент: ('xpath', '//*[@id="client_name"]')
+Поиск элемента: ('xpath', '//*[@id="client_name"]')
+Элемент найден: ('xpath', '//*[@id="client_name"]')
+Наведение выполнено на элемент: ('xpath', '//*[@id="client_name"]')
+Клик на элемент: ('xpath', '//*[@id="client_name"]')
+Поиск элемента: ('xpath', '//*[@id="client_name"]')
+Элемент найден: ('xpath', '//*[@id="client_name"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="client_name"]')
+Ввод текста 'Иванов Иван Иваныч' в элемент: ('xpath', '//*[@id="client_name"]')
+Поиск элемента: ('xpath', '//*[@id="client_name"]')
+Элемент найден: ('xpath', '//*[@id="client_name"]')
+Поле '('xpath', '//*[@id="client_name"]')' очищено.
+Текст 'Иванов Иван Иваныч' введён в элемент: ('xpath', '//*[@id="client_name"]')
+Поле 'Контактное лицо (ФИО)' успешно заполнено значением 'Иванов Иван Иваныч'.
+Клик на элемент: ('xpath', '//*[@id="create_order"]')
+Поиск элемента: ('xpath', '//*[@id="create_order"]')
+Элемент найден: ('xpath', '//*[@id="create_order"]')
+Клик выполнен на элемент: ('xpath', '//*[@id="create_order"]')
+Кнопка 'Подтвердить заказ' успешно нажата.
+Успешный редирект на промежуточную страницу: https://demo.yookassa.ru/orders/1661fb496c5a63a9292126b27bdf691a
+Успешный редирект на страницу оплаты: https://demo.yookassa.ru/payments/external/6127245/payment_page?key=1661fb496c5a63a9292126b27bdf691a

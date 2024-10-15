@@ -1,1 +1,1 @@
-[]
+[{"uid":"6704ac2af630e9dd","name":"test_product_order_flow1","time":{"start":1729002647658,"stop":1729002952048,"duration":304390},"status":"passed","severity":"normal"},{"uid":"99e8cb4f2b9c202c","name":"test_product_order_flow2","time":{"start":1729002952061,"stop":1729003007094,"duration":55033},"status":"passed","severity":"normal"},{"uid":"3102020dc608bf65","name":"test_product_order_negative_flow","time":{"start":1729003007095,"stop":1729003371724,"duration":364629},"status":"passed","severity":"normal"}]
