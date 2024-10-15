@@ -114,24 +114,27 @@ class BasePage:
     def input_text_with_autocomplete(self, locator, text, timeout=10):
         try:
             print(f"Ввод текста '{text}' в элемент: {locator}")
-            element = self.find_element(locator, timeout)
 
-            # Очистка поля через выделение всего текста и удаление
-            element.click()
-            element.send_keys(Keys.CONTROL, 'a')  # Выделить весь текст
-            element.send_keys(Keys.BACKSPACE)  # Удалить выделенное
-            time.sleep(5)
+            element = WebDriverWait(self.driver, timeout).until(
+                EC.element_to_be_clickable(locator)
+            )
 
-            assert element.get_attribute('value') == '', "Поле не очищено до конца"
+            element.send_keys(Keys.CONTROL, 'a')
+            element.send_keys(Keys.BACKSPACE)
+
+            WebDriverWait(self.driver, timeout).until(
+                lambda driver: element.get_attribute('value') == ''
+            )
             print(f"Поле '{locator}' очищено.")
 
             element.send_keys(text)
-            time.sleep(5)
 
-            # Для подтверждения автозаполнения — нажимаем клавишу Enter
+            WebDriverWait(self.driver, timeout).until(
+                lambda driver: element.get_attribute('value') == text
+            )
             element.send_keys(Keys.RETURN)
-
             print(f"Текст '{text}' введён и подтверждён через автозаполнение.")
+
         except Exception as e:
             print(f"Не удалось ввести текст '{text}' в элемент: {locator}. Ошибка: {e}")
             self.take_screenshot(f"input_failed_{locator}")
