@@ -153,21 +153,27 @@ def test_product_order_negative_flow(driver):
                      'без заполненных полей "Населенный пункт", "Контактное лицо (ФИО)"'):
         print("Валидное заполнение телефона")
         order_page.fill_contact_phone()
+        time.sleep(5)
         order_page.submit_order()
+        time.sleep(5)
         if not order_page.check_redirect_to_payment():
             print("Переход на следующую проверку заполнения полей.")
 
     with allure.step('Заполнение только невалидного населенного пункта и повторная попытка'):
         print("Заполнение невалидного населенного пункта")
         order_page.fill_locality_invalid()
+        time.sleep(10)
         order_page.submit_order()
+        time.sleep(5)
         if not order_page.check_redirect_to_payment():
             print("Переход на следующую проверку заполнения полей.")
 
     with allure.step('Заполнение валидного населенного пункта и повторная попытка без ФИО'):
         print("Заполнение валидного населенного пункта")
         order_page.fill_locality_valid()
+        time.sleep(10)
         order_page.submit_order()
+        time.sleep(5)
         if not order_page.check_redirect_to_payment():
             print("Переход на следующую проверку заполнения полей.")
 
